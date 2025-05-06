@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipes</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #f8f8f8;
+			margin: 0;
+			padding: 0;
+		}
+
+		h2 {
+			font-size: 40px;
+			color: darkslategray;
+		}
+
+		.recipe-head {
+			position: relative;
+			text-align: center;
+			color: chocolate;
+		}
+
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 50px;
+			font-family: 'Papyrus', cursive;
+			line-height: 25px;
+			color: white;
+		}
+
+		.recipe {
+			padding-left: 60px;
+			font-size: 20px;
+			background-color: #fff;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			margin: 20px 0;
+			padding: 20px;
+			border-radius: 8px;
+		}
+
+		ul {
+			list-style-type: circle;
+			margin-left: 30px;
+		}
+
+		ol {
+			margin-left: 40px;
+		}
+
+		.recipe img {
+			width: 100%;
+			max-width: 700px;
+			border-radius: 8px;
+			margin-top: 20px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.options {
+			background-color: maroon;
+			text-align: center;
+			color: white;
+			font-size: 20px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+
+		.button {
+			cursor: pointer;
+			padding: 8px 15px;
+			margin: 5px;
+			background-color: #444;
+			border-radius: 5px;
+			text-decoration: none;
+			color: white;
+			font-size: 16px;
+		}
+
+		.button:hover {
+			background-color: #f4a261;
+		}
+
+		.button:active {
+			font-size: 18px;
+			transform: scale(0.98);
+		}
+
+		footer {
+			text-align: center;
+			padding: 10px;
+			background-color: lemonchiffon;
+			font-family: 'Quicksand', sans-serif;
+			color: #333;
+		}
+
+		footer a {
+			color: #f4a261;
+			text-decoration: none;
+		}
+
+		footer a:hover {
+			color: #e76f51;
+		}
+
+		/* Media Queries for Responsiveness */
+		@media (max-width: 768px) {
+			.recipe {
+				padding-left: 20px;
+				font-size: 18px;
+			}
+
+			.text p {
+				font-size: 40px;
+			}
+
+			.recipe-head img {
+				width: 100%;
+				height: auto;
+			}
+
+			.recipe img {
+				width: 100%;
+				max-width: none;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="options">
+		<p>
+			<span class="button"><a href="aboutus.html">About Us</a></span> &nbsp; &nbsp; &#124; &nbsp; &nbsp; 
+			<span class="button"><a href="home.html">Home</a></span> &nbsp; &nbsp; &#124; &nbsp; &nbsp; 
+			<span class="button"><a href="menu.html">Menu</a></span> &nbsp; &nbsp; &#124; &nbsp; &nbsp; 
+			<span class="button"><a href="order.html">Order</a></span> &nbsp; &nbsp; &#124; &nbsp; &nbsp; 
+			<span class="button"><a href="recipes.html">Recipes</a></span> &nbsp; &nbsp; &#124; &nbsp; &nbsp; 
+			<span class="button"><a href="reviews.html">Reviews</a></span> &nbsp; &nbsp; &#124; &nbsp; &nbsp; 
+			<span class="button"><a href="funfacts.html">Facts</a></span>
+		</p>
+	</div>
+
+	<div class="recipe-head">
+		<img src="https://png.pngtree.com/background/20210711/original/pngtree-coffee-hot-drink-afternoon-tea-banner-background-picture-image_1115539.jpg" alt="Recipe Header Image">
+		<div class="text">
+			<p>Recipes</p>
+			<p style="font-size: 20px;">Learn some simple recipes with us</p>
+		</div>
+	</div>
+
+	<h2>1. Choco-chip Cookie</h2>
+	<div class="recipe">
+		<h3>Ingredients:</h3>
+		<ul>
+			<li>Butter</li>
+			<li>Brown sugar</li>
+			<li>Granulated sugar</li>
+			<li>Flour</li>
+			<li>Salt</li>
+			<li>Chocolate Chips</li>
+			<li>Vanilla extract</li>
+			<li>Egg</li>
+			<li>Baking soda</li>
+		</ul>
+		<h3>Recipe:</h3>
+		<ol>
+			<li> Melt the butter. The butter shouldn’t be sizzling hot.</li>
+			<li>Whisk in the sugars until well-combined.</li>
+			<li>Mix in the vanilla extract and the egg.</li>
+			<li>Add the flour, baking soda, and salt. Stir in just until combined.</li>
+			<li>Stir in the chocolate chips, then scoop the dough onto a baking sheet.</li>
+			<li>Bake until golden brown!</li>
+		</ol>
+		<p>Enjoy your delicious choco-chip cookies!</p>
+		<img src="https://i.pinimg.com/originals/4c/14/57/4c1457fc413a12fd338a52940cac84a1.png" alt="Chocolate Chip Cookies">
+		<p>You can also view a video here &#128073; <a href="https://www.youtube.com/watch?v=qhaWZ98RYWY" style="color: blue;">Choco-chip Cookies</a></p>
+	</div>
+
+	<h2> Vanilla Cupcakes</h2>
+<div class="recipe">
+    <h3>Ingredients:</h3>
+    <ul style="list-style-type:circle;">
+        <li>1 1/2 cups all-purpose flour</li>
+        <li>1 cup sugar</li>
+        <li>1/2 cup unsalted butter, softened</li>
+        <li>2 eggs</li>
+        <li>1 tsp vanilla extract</li>
+        <li>1/2 cup milk</li>
+        <li>1 1/2 tsp baking powder</li>
+        <li>A pinch of salt</li>
+    </ul>
+    <h3>Recipe:</h3>
+    <p>Follow the following steps-</p>
+    <ol>
+        <li>Preheat the oven to 350°F (175°C) and line a cupcake tray with paper liners.</li>
+        <li>Cream the butter and sugar together in a bowl until light and fluffy.</li>
+        <li>Add the eggs one at a time, mixing well after each.</li>
+        <li>Stir in the vanilla extract.</li>
+        <li>In another bowl, combine the flour, baking powder, and salt.</li>
+        <li>Gradually add the dry ingredients to the wet mixture, alternating with the milk. Mix until smooth.</li>
+        <li>Spoon the batter evenly into the cupcake liners, filling each about 2/3 full.</li>
+        <li>Bake for 18-20 minutes, or until a toothpick inserted into the center comes out clean.</li>
+        <li>Let the cupcakes cool before frosting.</li>
+    </ol>
+    <h3>Frosting (Optional):</h3>
+    <ul>
+        <li>1/2 cup butter, softened</li>
+        <li>1 1/2 cups powdered sugar</li>
+        <li>1 tsp vanilla extract</li>
+        <li>1-2 tbsp milk</li>
+        <li>A pinch of salt</li>
+    </ul>
+    <p>Mix the ingredients to make a creamy frosting and frost the cupcakes after they have cooled.</p>
+    <img src="https://www.tasteofhome.com/wp-content/uploads/2020/09/Vanilla-Cupcakes-Recipe-Image.jpg" alt="Vanilla Cupcakes">
+</div>
+
+<h2> Banana Bread</h2>
+<div class="recipe">
+    <h3>Ingredients:</h3>
+    <ul style="list-style-type:circle;">
+        <li>1 3/4 cups all-purpose flour</li>
+        <li>1 tsp baking soda</li>
+        <li>1/2 tsp salt</li>
+        <li>1/2 cup butter, softened</li>
+        <li>1 cup sugar</li>
+        <li>2 ripe bananas, mashed</li>
+        <li>2 eggs</li>
+        <li>1 tsp vanilla extract</li>
+        <li>1/4 cup sour cream</li>
+    </ul>
+    <h3>Recipe:</h3>
+    <p>Follow the following steps-</p>
+    <ol>
+        <li>Preheat the oven to 350°F (175°C) and grease a loaf pan.</li>
+        <li>In a bowl, combine the flour, baking soda, and salt.</li>
+        <li>In a separate bowl, beat the butter and sugar together until light and fluffy.</li>
+        <li>Add the mashed bananas, eggs, vanilla extract, and sour cream. Mix well.</li>
+        <li>Gradually add the dry ingredients to the wet mixture and stir until just combined.</li>
+        <li>Pour the batter into the prepared loaf pan.</li>
+        <li>Bake for 60-65 minutes, or until a toothpick inserted into the center comes out clean.</li>
+        <li>Allow the banana bread to cool before slicing.</li>
+    </ol>
+    <img src="https://www.tasteofhome.com/wp-content/uploads/2020/08/Banana-Bread-Recipe-Image.jpg" alt="Banana Bread">
+</div>
+
+
+	<footer>
+		<p>Contact us: 123-456-7890 | Follow us on Instagram: <a href="https://instagram.com/our_cafe" target="_blank">@Our_CAFE</a></p>
+	</footer>	
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myths and Facts About Cafe Culture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .myth-facts {
+            margin: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #5d4037;
+        }
+
+        .fact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .fact {
+            position: relative;
+            background-color: #ffe0b2;
+            padding: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .fact:hover {
+            background-color: #ffe5b4;
+        }
+
+        .fact-content {
+            z-index: 2; /* Ensure this is on top */
+        }
+
+        .fact-detail {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+            padding: 10px;
+            border-radius: 10px;
+            text-align: left;
+            color: #6d4c41;
+            z-index: 1; /* Ensure this is below */
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+
+        .fact:hover .fact-detail {
+            display: block;
+            opacity: 1; /* Show on hover */
+        }
+	footer {
+	text-align: center;
+	padding: 10px;
+	background-color: lemonchiffon;
+	position: absolute; 
+	bottom: 0px;
+	right:0%;
+	left:0%;
+	}
+    </style>
+</head>
+<body>
+    <section class="myth-facts">
+        <h2>Myths and Facts About Cafe Culture</h2>
+        <p>Explore the truths behind common cafe myths while enjoying your favorite beverages!</p>
+        <div class="fact-grid">
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: All coffee is the same.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: Different coffee beans have unique flavors and aromas based on their origin!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: Espresso has more caffeine than regular coffee.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: Espresso has less caffeine per ounce but is served in smaller quantities!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: Cold brew coffee is just regular coffee poured over ice.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: Cold brew is steeped in cold water for 12-24 hours for a smoother taste!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: The darker the roast, the more caffeine it has.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: Lighter roasts often contain more caffeine because the roasting process reduces it!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: All tea comes from black tea leaves.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: There are various types of tea, including green, white, oolong, and herbal, each from different leaves!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: Adding milk to coffee ruins its flavor.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: Milk can enhance the flavor and make the coffee creamier and richer!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: Decaf coffee has no caffeine at all.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: Decaf still contains a small amount of caffeine, usually about 2-5 mg per cup!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: All iced coffee is sweetened.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: Iced coffee can be served black or sweetened, depending on your taste!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: Latte art is just for show.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: Latte art demonstrates the skill of a barista and enhances the drinking experience!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="fact-content">
+                    <p>Myth: Coffee should be stored in the fridge.</p>
+                </div>
+                <div class="fact-detail">
+                    <p>Fact: Coffee is best stored in a cool, dark place in an airtight container to maintain freshness!</p>
+                </div>
+            </div>
+        </div>
+	<footer>
+        <p style="font-family: 'Quicksand', sans-serif;">Contact us: 123-456-7890 | Follow us on Instagram: @Our_CAFE</p>
+    </footer>
+    </section>
+</body>
+</html>

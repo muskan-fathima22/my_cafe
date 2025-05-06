@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Café Order Section</title>
+<style>
+.order-head {
+	position: relative;
+	text-align: center;
+	color: chocolate;
+}
+.text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+	font-family: "lucida handwriting", cursive;
+	color: #a65a2c;
+	font-style: oblique;
+	font-weight: bold;s
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: #ff7f50;
+}
+
+.menu-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ff6347;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffe4e1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.toppings {
+    margin-top: 5px;
+}
+
+input[type="number"], select {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orangered;
+}
+	a{
+	color:white;
+	}
+	.options{ 
+	background-color: #64b5a2;
+	width: 1500px;
+	color:white;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px; 	
+	}
+	.button:hover{
+	cursor: pointer;
+	}
+	.button:active{
+	font-size: 19px;
+	}
+	.game {
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	background-color: lightblue;
+	margin-bottom: 30px;
+	}
+	footer {
+	text-align: center;
+	padding: 10px;
+	background-color: lemonchiffon;
+	}
+</style>
+</head>
+<body>
+	<div class="options">
+		<p><u class="button"><a href="aboutus.html">About Us</a></u> &nbsp; &nbsp; &#124; 
+	&nbsp; &nbsp; <u class="button"><a href="home.html">Home</a></u> &nbsp; &nbsp; &#124; 
+	&nbsp; &nbsp; <u class="button"><a href="menu.html">Menu</a></u> &nbsp; &nbsp; &#124; 
+	&nbsp; &nbsp; <u class="button"><a href="order.html">Order</a></u> &nbsp; &nbsp; &#124; 
+	&nbsp; &nbsp; <u class="button"><a href="recipes.html">Recipes</a></u> &nbsp; &nbsp; &#124; 
+	&nbsp; &nbsp; <u class="button"><a href="reviews.html">Reviews</a></u> &nbsp; &nbsp; &#124;
+	&nbsp; &nbsp; <u class="button"><a href="reservations.html">Reservation</a></u> &nbsp; &nbsp; &#124;  
+	&nbsp; &nbsp; <u class="button"><a href="funfacts.html">Facts</a></u></p>
+		</div>
+	<div class="order-head">
+	<img src="https://png.pngtree.com/background/20221106/original/pngtree-watercolor-leaves-with-gold-rectangle-frame-background-picture-image_1949463.jpg" width="1500px" height="650px">
+	<div class="text">Order Now!</div>
+	</div>
+    <div class="container">
+        <h1 class="title">Order your favs!!</h1>
+        
+        <div class="menu-section">
+            <h2>Ice Creams</h2>
+            <ul>
+                <li>
+                    Vanilla - ₹300 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                     
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li>
+                <li>
+                    Chocolate - ₹300 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li>
+<li>
+                    cookie dough- ₹450 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                     
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li>
+<li>
+                    strawberry - ₹300 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                     
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li> 
+<li>
+                    Mango - ₹300 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                     
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li>
+                  <li>
+                     mint- ₹350 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                     
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li>
+<li>
+                    Bubble gum- ₹300 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                     
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li>
+<li>
+                    Pistachio- ₹300 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                     
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li>
+<li>
+                    Coffee- ₹300 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                     
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li>
+<li>
+                    Rocky road- ₹400
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                     
+                        <input type="checkbox"> Fruit Toppings
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h2>Drinks</h2>
+            <ul>
+                <li>
+                    Iced Coffee - ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Ice
+                        <input type="checkbox"> Extra Sugar
+                        <input type="checkbox"> Flavored Syrup
+                        <input type="checkbox"> Milk Alternatives
+                    </div>
+                </li>
+ <li>
+                    Iced tea- ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Ice
+                        <input type="checkbox"> Extra Sugar
+                        <input type="checkbox"> Flavored Syrup
+                        <input type="checkbox"> Milk Alternatives
+                    </div>
+                </li>
+ <li>
+                    Lemonade- ₹280
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Ice
+                        <input type="checkbox"> Extra Sugar
+                        <input type="checkbox"> Flavored Syrup
+                      
+                    </div>
+                </li>
+ <li>
+                    Fruit soda- ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Ice
+                        <input type="checkbox"> Extra Sugar
+                        <input type="checkbox"> Flavored Syrup
+                        <input type="checkbox"> Fruit slices
+                    </div>
+                </li>
+ <li>
+                    Milk shakes- ₹300
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Ice
+                        <input type="checkbox"> Whipped cream
+                        <input type="checkbox"> Flavored Syrup
+                        <input type="checkbox"> Milk Alternatives
+                    </div>
+                </li>
+ <li>
+                    coffee- ₹200
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        <input type="checkbox"> cocoa powder
+                        <input type="checkbox"> Extra Sugar
+                        <input type="checkbox"> Flavored Syrup
+                        <input type="checkbox"> Milk Alternatives
+                    </div>
+                </li>
+ <li>
+                    chai- ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        
+                        <input type="checkbox"> Extra Sugar
+                        
+                        <input type="checkbox"> Milk Alternatives
+                    </div>
+                </li>
+ <li>
+                    Hot choclate- ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        <input type="checkbox"> Extra choclate
+                        <input type="checkbox"> Extra Sugar
+                        <input type="checkbox"> Flavored Syrup
+                        <input type="checkbox"> Marshmellows
+                    </div>
+                </li>
+ <li>
+                   Fruit punch - ₹375
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Ice
+                        <input type="checkbox"> Extra Sugar
+                        <input type="checkbox"> Flavored Syrup
+                        <input type="checkbox"> Berries
+                    </div>
+                </li>
+ <li>
+                    smoothie- ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Ice
+                        <input type="checkbox"> Extra Sugar
+                        <input type="checkbox"> Whipped cream
+                        <input type="checkbox"> Milk Alternatives
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h2>Cookies</h2>
+            <ul>
+                <li>
+                    Chocolate Chip - ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+ <li>
+                    Oatmeal raisin- ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+ <li>
+                    Peanut butter- ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+ <li>
+                    Snickerdoodle- ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+ <li>
+                    Double chocolate- ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+ <li>
+                    Fortune cookie - ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+ <li>
+                    Linzer- ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+ <li>
+                    Molasses- ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+ <li>
+                    Macaron - ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+ <li>
+                    Sugar cookie - ₹200 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra Butter
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Chips
+                        <input type="checkbox"> Sprinkles
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h2>Snacks</h2>
+            <ul>
+                <li>
+                    Chocolate Cake - ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Add Ice Cream
+                        <input type="checkbox"> Whipped Cream
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                        <input type="checkbox"> Fresh Berries
+                    </div>
+                </li>
+  <li>
+                    Croissant - ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Ham and cheese
+                        <input type="checkbox"> Eggs
+                        <input type="checkbox"> Fillings
+                        <input type="checkbox"> Sauces
+                        <input type="checkbox"> Sweeteners
+                    </div>
+                </li>
+  <li>
+                    Cup cake - ₹350
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Add Ice Cream
+                        <input type="checkbox"> Whipped Cream
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                        <input type="checkbox"> Fresh Berries
+                    </div>
+                </li>
+  <li>
+                     Waffle - ₹375
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Add Ice Cream
+                        <input type="checkbox"> Whipped Cream
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                        <input type="checkbox"> Fresh Berries
+                    </div>
+                </li>
+  <li>
+                    Cheese cake - ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Extra cheese
+                        <input type="checkbox"> Whipped Cream
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                        <input type="checkbox"> Fresh Berries
+                    </div>
+                </li>
+  <li>
+                    Lemon tarts- ₹380
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Powdered sugar
+                        <input type="checkbox"> Whipped Cream
+                        <input type="checkbox"> Chocolate Sauce
+                        <input type="checkbox"> Fresh Berries
+                    </div>
+                </li>
+  <li>
+                    Cinnamon roll - ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Add Cream
+                        <input type="checkbox"> Caramel drizzle
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                        <input type="checkbox"> Fresh Berries
+                    </div>
+                </li>
+  <li>
+                    Apple pie - ₹450
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Crumb topping
+                        <input type="checkbox"> Whipped Cream
+                        <input type="checkbox"> Nuts
+                        <input type="checkbox"> Chocolate Sauce
+                        <input type="checkbox"> Fresh Berries
+                    </div>
+                </li>
+  <li>
+                  Sandwich - ₹380
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                       
+                        <input type="checkbox"> Lettuce
+                        <input type="checkbox"> Avocado
+                        <input type="checkbox"> cheese
+                        <input type="checkbox"> Pickles and dips
+                    </div>
+                </li>
+  <li>
+                    Donuts - ₹400 
+                    <input type="number" min="1" placeholder="Qty">
+                    <div class="toppings">
+                        <input type="checkbox"> Glazed icing 
+                        <input type="checkbox"> Sprinkles
+                        <input type="checkbox"> Ganache
+                        <input type="checkbox"> Chocolate Sauce
+                    </div>
+                </li>
+  
+                <!-- Add other snacks similarly -->
+            </ul>
+        </div>
+<p>Try "Pick A Drink" with us to choose a drink depending on your mood!
+<a href="pick-a-drink.html" style="color: crimson;">Pick A Drink</a></p>       
+    <input type="checkbox" id="orderCheckbox" style="display:none;">
+    <label for="orderCheckbox">
+        <button class="order-button" onclick="message()">Place Order</button>
+	<p id="demo"></p>
+	<script>
+	function message() {
+	document.getElementById("demo").innerHTML = "Your order has been placed!";
+	}
+	</script>
+    </label>
+    </div>
+	<footer>
+        <p style="font-family: 'Quicksand', sans-serif;">Contact us: 123-456-7890 | Follow us on Instagram: @Our_CAFE</p>
+    </footer>
+</body>
+</html>
+</body>
+</html>
